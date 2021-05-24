@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #161616;
+    color: #dfdfdf;
+  }
+  
+  h1{
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
+  }
+  
+  p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* HEADER STYLES */
+  
+  header {
+    overflow: hidden;
+    background: rgb( 22, 22, 22,);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px 10px;
+  }
+
+  
+  .header a {
+    float: left;
+    color: #161616;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+  
+  ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+  }
+  
+  .header a.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dfdfdf;
+    margin-left: 10%;
+  }
+  
+  .header a:hover {
+    background-color: #ff5555;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header a{
+    color: #dfdfdf;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header{
+      padding: 10px;
+      margin: 0;
+    }
+    
+    .header a, .header a.logo{
+      font-size: 1rem;
+    }
+ }
+  
+  /* HERO SECTION STYLES */
+  
+  .sub-head{
+    letter-spacing: 6px;
+    padding: 20px 0px 20px 0px;
+  }
+  
+  .hero-image{
+    background-image: url("../img/concert.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-section{
+    height: 500px;
+    color: #ff5555;
+    font-size: 2rem;
+    /* letter-spacing: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-section h1{
+    text-shadow: 2px 2px #161616;
+  }
+  
+  
+  .container{
+    position: relative;
+    display: inline-block;
+    background: rgba(131, 129, 129, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 85, 85, 0.07);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .hero-section{
+      height: 420px;
+    }
+    
+    .hero-section, .sub-head{
+      font-size: 1rem;
+    }
+  
+    .sub-head{
+      letter-spacing: 2px;
+      text-shadow: 1px 1px #161616;
+    }
+    
+  }
+
+  /* INFO SECTION */
+
+  .info-section{
+    padding-top: 50px;
+    height: 500px;
+    font-size: 1.5rem;
+    color: #ff5555;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .info-content{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 0px 20% 0px 20%;
+    position: relative;
+    padding-top: 50px;
+    align-items: center;
+    }
+
+    .info-content h1, p{
+      text-align: left;
+      text-underline-position: 20px;
+      /* line-height: 50px; */
+      color: #dfdfdf;
+    }
+
+.info-text{
+    text-align: left;
+}
+
+.gallery-height {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 700px;
+	align-content: center;
+  margin: 0px 150px;
+}
+
+@media only screen and (max-width: 600px) {
+.gallery-height {
+  margin: 0px;
+}
+}
+
+.img {
+	width: 30%;
+  padding: 10px;
+	background-color: orange;
+	margin: 5px;
+	color: aliceblue;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 45px;
+	border-radius: 2px;
+}
+
+.img-1{
+  height:125px;
+  background-image: url(../img/About/1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-2{
+  height:290px;
+  background-image: url(../img/About/2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-3{
+  background-image: url(../img/About/3.jpg);
+  background-size: cover;
+  background-position: center;
+  height:130px;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-4{
+  background-image: url(../img/About/4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  padding: 10px;
+  height:205px;
+}
+
+.img-5{
+  background-image: url(../img/About/5.jpg);
+  background-size: cover;
+  background-position: center;
+  height:130px;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-6{
+  background-image: url(../img/About/6.jpg);
+  background-size: cover;
+  background-position: center;
+  height:210px;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-7{
+  background-image: url(../img/About/7.jpg);
+  background-size: cover;
+  background-position: center;
+  height:125px;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-8{
+  background-image: url(../img/About/8.jpg);
+  background-size: cover;
+  background-position: center;
+  height:290px;
+  width: 30%;
+  padding: 10px;
+}
+
+.img-9{
+  background-image: url(../img/About/9.jpg);
+  background-size: cover;
+  background-position: center;
+  height:130px;
+  width: 30%;
+  padding: 10px;
+}

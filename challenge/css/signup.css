@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #161616;
+    color: #ff5555;
+    background-image: url("../img/background.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  h1{
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
+  }
+  
+  p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* HEADER STYLES */
+  
+  header {
+    overflow: hidden;
+    background: rgba( 22, 22, 22, 1);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px 10px;
+  }
+
+  
+  .header a {
+    float: left;
+    color: #161616;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+  
+  ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+  }
+  
+  .header a.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5555;
+    margin-left: 10%;
+  }
+  
+  .header a:hover {
+    background-color: #ff5555;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header a{
+    color: #ff5555;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header{
+      padding: 10px;
+      margin: 0;
+    }
+    
+    .header a, .header a.logo{
+      font-size: 1rem;
+    }
+ }
+
+/* FORM STYLES */
+
+.container{
+    height: 800px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    float: left;
+	left: 33.3%;
+	position: absolute;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: rgba(131, 129, 129, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 85, 85, 0.5);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+    color: #ff5555;
+    text-transform: capitalize;
+}
+
+form h1{
+    padding: 2%;
+    text-shadow: 2px 2px #161616;
+}
+
+input{
+    background-color: #161616;
+    color: #ff5555;
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+    height: 10%;
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+.inputs{
+    text-shadow: 1px 1px #161616;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.radiobtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+.btn{
+    max-width: 100px;
+    background-color: #ff5555;
+    color: #161616;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0px;
+  
+}
+
+.btn:hover{
+    background-color: #161616;
+    color: #ff5555;
+}
